@@ -36,10 +36,14 @@ https://example.com?param2=value2&param3=value3&param1=PAYLOAD
 
 ```bash
 
+# make sure you have python3 installed
+
 git clone https://github.com/7-th/7cleanparam.git
 
-sudo chmod +x 7cleanparam/7cleanparam.py
+cd 7cleanparam
 
-sudo cp ./7cleanparam /usr/bin/7cleanparam
+sudo chmod +x ./7cleanparam.py
+
+sudo cp ./7cleanparam.py /usr/bin/7cleanparam
 
 ```
