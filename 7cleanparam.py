@@ -52,7 +52,8 @@ if __name__ == "__main__":
         results = clear_parameter_value(line)
 
         for result in results:
-            final_results_set.add(result)
+            
+            if result: final_results_set.add(result)
 
     for result in final_results_set:
         sys.stdout.write(result + "\n")
