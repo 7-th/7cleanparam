@@ -55,6 +55,10 @@ if __name__ == "__main__":
             
             if result: final_results_set.add(result)
 
-    for result in final_results_set:
-        sys.stdout.write(result + "\n")
+    try:
+        
+        for result in final_results_set:
+            sys.stdout.write(result + "\n")
+    
+    except (BrokenPipeError, KeyboardInterrupt): sys.exit(0)
 
